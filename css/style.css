@@ -1,0 +1,176 @@
+body{
+    background-color: #515151;
+}
+
+p{
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: white;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+/* Main Page */
+.pgTitle{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-link-bg{
+    background-image: url("../assets/images/jackie.webp");
+    background-size:cover;
+    height: 150px;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.rec-link-bg{
+    background-image: url("../assets/images/threeDragons.jpg");
+    background-size: cover;
+    background-position-y: 35%;
+    height: 150px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.anecdote-link-bg{
+    background-image: url("../assets/images/jackieAndMichelle.avif");
+    background-size: cover;
+    background-position-y: 30%;
+    height: 150px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.front-pg-button-txt{
+    display: flex;
+    align-items: flex-end;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.text-bg{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    margin-bottom: .6rem;
+    color: white;
+    padding-right: 1rem;
+}
+
+.text-bg a{
+    color: white;
+    text-decoration: none;
+}
+
+.text-bg a:hover{
+    transform: scale(1.02);
+    text-decoration: underline;
+}
+
+/* recommendations pg */
+.posters {
+    width: 40%;
+    height: auto;
+}
+
+.poster-padding{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title-underline{
+    text-decoration: underline;
+}
+
+.row-padding{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* about pg */
+.float-start{
+    margin-right: 2rem;
+}
+
+.float-end{
+    margin-left: 2rem;
+}
+
+.about-pic{
+    width: 40%;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .about-pic{
+        width: 60%;  
+    }
+
+    .front-pg-button-txt{
+        font-size: 2rem;
+    }
+    .posters{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .about-pic{
+        width: 100%;
+    }
+    
+    .float-start{
+        margin-right: 0rem;
+    }
+    
+    .float-end{
+        margin-left: 0rem;
+    }
+
+    .posters{
+        width: 60%;
+        margin-right: 1rem !important;
+    }
+}
+
+@media (max-width: 575px){
+    .front-pg-button-txt{
+        font-size: 1.5rem;
+    }
+
+    .posters{
+        width: 90%;
+    }
+    
+    .pgTitle{
+        font-size: 2.5rem;
+    }
+    
+    p{
+        font-size: 1.5rem;
+    }
+}
